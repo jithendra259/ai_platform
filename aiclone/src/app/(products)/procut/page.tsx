@@ -59,7 +59,7 @@ export default function Classes() {
               </div>
             </div>
             <Image
-              src="/procut.webp"
+              src="/image/procut/procut.webp"
               alt="procut"
               width={600}
               height={400}
@@ -77,7 +77,7 @@ export default function Classes() {
         <div className="space-y-20 text-white">
 
           <div data-aos="fade-up-right" data-aos-duration="2000" className="flex flex-col md:flex-row items-center  justify-center  gap-10">
-            <Image src="/meme generate.webp" alt="meme" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
+            <Image src="/image/procut/meme generate.webp" alt="meme" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
             <div>
               <h3 className="text-4xl font-semibold mb-2">
                 Meme Generation</h3>
@@ -91,12 +91,12 @@ export default function Classes() {
               <h3 className="text-4xl font-semibold mb-2">Marketing Video Creation</h3>
               <p className=" split-text text-2xl">Design captivating marketing videos to effectively promote your products or services, enhancing your brand's visibility and reach.</p>
             </div>
-            <Image src="/marketing video.webp" alt="marketing video" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
+            <Image src="/image/procut/marketing video.webp" alt="marketing video" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
           </div>
           <Image data-aos="fade-up" data-aos-duration="2000" src="/divider.svg" alt="divider" width={2000} height={150} className="w-full h-auto my-8 object-contain" />
 
           <div data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="2000" className="flex flex-col md:flex-row items-center justify-center  gap-10">
-            <Image src="/user friendly.webp" alt="user friendly" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
+            <Image src="/image/procut/user friendly.webp" alt="user friendly" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
             <div>
               <h3 className="text-4xl font-semibold mb-2">
                 User-Friendly Interface</h3>
@@ -110,12 +110,12 @@ export default function Classes() {
               <h3 className="text-4xl font-semibold mb-2">Time-Saving</h3>
               <p className=" split-text text-2xl" >Save valuable time and resources by utilizing Procut to generate high-quality content quickly, allowing you to focus on other essential tasks.</p>
             </div>
-            <Image src="/time saving.webp" alt="time saving" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
+            <Image src="/image/procut/time saving.webp" alt="time saving" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
           </div>
           <Image data-aos="fade-up" data-aos-duration="2000" src="/divider.svg" alt="divider" width={2000} height={150} className="w-full h-auto my-8 object-contain" />
 
           <div data-aos="fade-up-right" data-aos-delay="200" data-aos-duration="2000" className="flex flex-col md:flex-row items-center justify-center  gap-10">
-            <Image src="/innovative solution.webp" alt="innovative solution" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
+            <Image src="/image/procut/innovative solution.webp" alt="innovative solution" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-cover" />
             <div>
               <h3 className="text-4xl font-semibold mb-2">
                 Innovative Solution</h3>

@@ -34,7 +34,7 @@ export default function ONLINE_TESTING() {
   return (
     <>
       <div className=" px-4 md:px-20 lg:px-32 py-10 bg-black mx-auto max-w-[96rem] ">
-        <h1 data-aos="fade-right" data-aos-duration="2000" className="text-4xl md:text-5xl text-center font-bold mb-15">ONLINE_TESTING</h1>
+        <h1 data-aos="fade-right" data-aos-duration="2000" className="text-4xl md:text-5xl text-white text-center font-bold mb-15">ONLINE_TESTING</h1>
         <section data-aos="fade-down" data-aos-duration="3000" data-aos-delay="100" className="text-center  text-white mb-12 ">
           <div className="flex flex-row md:flex-row items-center mb-3  ">
             <div className=" text-blue-500"><a href="/">Products</a></div>
@@ -58,7 +58,7 @@ export default function ONLINE_TESTING() {
               </div>
             </div>
             <Image
-              src="/online testing.webp"
+              src="/image/Online_testing/online Testing.webp"
               alt="online"
               width={600}
               height={400}
@@ -77,7 +77,7 @@ export default function ONLINE_TESTING() {
         <div className="space-y-20 text-white">
 
           <div data-aos="fade-up-right" data-aos-duration="2000" className="flex flex-col md:flex-row items-center  justify-center  gap-10">
-            <Image src="/webcam security.webp" alt="Webcam Security" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
+            <Image src="/image/Online_testing/webcam security.webp" alt="Webcam Security" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
             <div>
               <h3 className="text-4xl font-semibold mb-2">Webcam Security</h3>
               <p className="split-text text-2xl" >Begin by ensuring the integrity of your tests with built-in webcam monitoring, effectively deterring cheating attempts.</p>
@@ -90,12 +90,12 @@ export default function ONLINE_TESTING() {
               <h3 className="text-4xl font-semibold mb-2">Tab Locking</h3>
               <p className=" split-text text-2xl" >Maintain focus during tests by preventing users from accessing other tabs or applications, ensuring undivided attention to the task at hand.</p>
             </div>
-            <Image src="/tabalert.webp" alt="Tab Locking" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
+            <Image src="/image/Online_testing/tabalert.webp" alt="Tab Locking" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
           </div>
           <Image data-aos="fade-up" data-aos-duration="2000" src="/divider.svg" alt="divider" width={2000} height={150} className="w-full h-auto my-8 object-contain" />
 
           <div data-aos="fade-up-right"  data-aos-duration="2000" className="flex flex-col md:flex-row items-center justify-center  gap-10">
-            <Image src="/tab-alert.webp" alt="Tab Alert" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
+            <Image src="/image/Online_testing/tab-alert.webp" alt="Tab Alert" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
             <div>
               <h3 className="text-4xl font-semibold mb-2">Tab Alert</h3>
               <p className=" split-text text-2xl" >Stay informed with real-time alerts, notifying you of any unauthorized tab switching during test sessions, allowing for prompt intervention.</p>
@@ -108,12 +108,12 @@ export default function ONLINE_TESTING() {
               <h3 className="text-4xl font-semibold mb-2">Right-Click Disable</h3>
               <p className=" split-text text-2xl" >Safeguard test content by disabling right-click functionality, preventing users from copying or pasting information and maintaining test integrity.</p>
             </div>
-            <Image src="/disble right click.webp" alt="Right Click Disable" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
+            <Image src="/image/Online_testing/disble right click.webp" alt="Right Click Disable" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
           </div>
           <Image data-aos="fade-up" data-aos-duration="2000" src="/divider.svg" alt="divider" width={2000} height={150} className="w-full h-auto my-8 object-contain" />
 
           <div data-aos="fade-up-right"  data-aos-duration="2000" className="flex flex-col md:flex-row items-center justify-center  gap-10">
-            <Image src="/time limits.webp" alt="Time Limits" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
+            <Image src="/image/time limits.webp" alt="Time Limits" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
             <div>
               <h3 className="text-4xl font-semibold mb-2">Time Limits</h3>
               <p className=" split-text text-2xl" >Encourage timely completion of tests and simulate real-world conditions by setting time limits, fostering a sense of urgency and accountability.</p>
@@ -126,12 +126,12 @@ export default function ONLINE_TESTING() {
               <h3 className="text-4xl font-semibold mb-2">Question Randomization</h3>
               <p className=" split-text text-2xl">Minimize the impact of collaboration or cheating by randomizing the order of questions, ensuring fairness and impartiality in assessment.</p>
             </div>
-            <Image src="/question randmization.webp" alt="Question Randomization" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
+            <Image src="/image/Online_testing/question randmization.webp" alt="Question Randomization" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
           </div>
           <Image data-aos="fade-up" data-aos-duration="2000" src="/divider.svg" alt="divider" width={2000} height={150} className="w-full h-auto my-8 object-contain" />
 
           <div data-aos="fade-up-right"  data-aos-duration="2000" className="flex flex-col md:flex-row items-center justify-center  gap-10">
-            <Image src="/auto-submitted.webp" alt="Auto Submission" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
+            <Image src="/image/Online_testing/auto-submitted.webp" alt="Auto Submission" width={200} height={150} className="w-full md:w-1/2 max-w-xs object-contain" />
             <div>
               <h3 className="text-4xl font-semibold mb-2">Auto Submission</h3>
               <  p className=" split-text text-2xl">Prevent unauthorized changes and ensure test completion integrity by automatically submitting tests upon completion or when the time limit expires.</p>
