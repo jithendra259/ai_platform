@@ -1,3 +1,6 @@
+import Headeraction from "@/components/ui/header-actions";
+import Footeraction from "@/components/ui/footer-actions";
+import ClientLayout from "@/components/ui/ClientLayout";
 
 
 export default function ProductLayout({
@@ -6,20 +9,24 @@ export default function ProductLayout({
   children: React.ReactNode;
 }>) {
   return (
-   
-      <body className="">
+
+  
+      <ClientLayout>
         <header>
-            
-             <a>product header</a>
+          <Headeraction />
         </header>
 
         <main>
-             {children}
+          {children}
         </main>
-           
-        
-       
-      </body>
-    
+
+        <footer>
+          <Footeraction />
+        </footer>
+      </ClientLayout>
+
+
+   
+
   );
 }
