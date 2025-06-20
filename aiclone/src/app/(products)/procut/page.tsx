@@ -35,7 +35,7 @@ export default function Classes() {
   return (
     <>
       <div className="px-4 md:px-20 lg:px-32 py-10 bg-black mx-auto max-w-[96rem] ">
-        <h1 data-aos="fade-right" data-aos-duration="2000" className="text-4xl md:text-5xl text-white text-center font-bold mb-15">PROCUT</h1>
+        <h1 data-aos="fade-right" data-aos-duration="2000" className="text-4xl md:text-5xl text-black dark-text-white text-center font-bold mb-15">PROCUT</h1>
         <section data-aos="fade-down" data-aos-duration="3000" data-aos-delay="100" className="text-center text-white mb-12 ">
           <div className="flex flex-row md:flex-row items-center mb-3  ">
             <div className=" text-2xl text-blue-500"><a href="/">Products</a></div>

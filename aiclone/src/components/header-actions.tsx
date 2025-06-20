@@ -2,12 +2,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { LightPullThemeSwitcher } from "@/components/ui/light-pull-theme-switcher"
 
 export default function HeaderActions() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [productOpen, setProductOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-
+ 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1080);
@@ -18,12 +19,17 @@ export default function HeaderActions() {
   }, []);
 
   return (
+    
     <header className="bg-black text-white px-4 py-3 flex flex-wrap justify-between items-center mx-auto max-w-[96rem] relative">
+        <div className="flex flex-col items-center">
+          <LightPullThemeSwitcher />
+          <p className="text-sm text-neutral-500">Pull down to change theme</p>
+        </div>
       <Link href="/">
-      <div className="flex items-center space-x-2">
-        <Image src="/logo-sm.png" alt="logo" width={48} height={48} className="object-cover" />
-        <h2 className="text-3xl sm:text-4xl font-bold">ScholarRank</h2>
-      </div>
+        <div className="flex items-center space-x-2">
+          <Image src="/logo-sm.png" alt="logo" width={48} height={48} className="object-cover" />
+          <h2 className="text-3xl sm:text-4xl font-bold">ScholarRank</h2>
+        </div>
       </Link>
 
       {/* Hamburger Button – now uses isMobile instead of sm:hidden */}
@@ -55,11 +61,11 @@ export default function HeaderActions() {
 
         {/* Products */}
         <div
-  className={`relative ${!isMobile ? "group" : ""} cursor-pointer`}
-  onClick={() => {
-    if (isMobile) setProductOpen(!productOpen);
-  }}
->
+          className={`relative ${!isMobile ? "group" : ""} cursor-pointer`}
+          onClick={() => {
+            if (isMobile) setProductOpen(!productOpen);
+          }}
+        >
           <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
             <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
             <span className="relative z-10 group-hover:text-black">Products</span>
@@ -150,6 +156,8 @@ export default function HeaderActions() {
             </button>
           </Link>
         </div>
+
+
       </div>
     </header>
   );
