@@ -48,23 +48,23 @@ export default function SignupPage() {
 
   return (
     <div className="w-full">
-      {}
-      <div className="lg:hidden text-center mb-8">
+      {/* Mobile Logo */}
+      <div className="lg:hidden text-center mb-6">
         <h1 className="text-3xl font-bold text-white">
           Scholar<span className="text-blue-400">Rank</span>
         </h1>
       </div>
 
-      {}
-      <div className="text-center mb-8">
+      {/* Header */}
+      <div className="text-center mb-6">
         <h2 className="text-3xl font-bold text-white mb-2">Create your account</h2>
         <p className="text-gray-300">
           Join the community and start your research journey today
         </p>
       </div>
 
-      {}
-      <div className="space-y-3 mb-6">
+      {/* Social Login Buttons */}
+      <div className="space-y-3 mb-5">
         <button
           type="button"
           className="w-full flex items-center justify-center gap-3 px-4 py-3 border border-gray-600 rounded-lg text-gray-200 bg-gray-700 hover:bg-gray-600 transition-colors duration-200 font-medium"
@@ -89,8 +89,8 @@ export default function SignupPage() {
         </button>
       </div>
 
-      {}
-      <div className="relative mb-6">
+      {/* Divider */}
+      <div className="relative mb-5">
         <div className="absolute inset-0 flex items-center">
           <div className="w-full border-t border-gray-600" />
         </div>
@@ -99,12 +99,12 @@ export default function SignupPage() {
         </div>
       </div>
 
-      {}
-      <form onSubmit={handleSubmit} className="space-y-6">
-        {}
+      {/* Signup Form */}
+      <form onSubmit={handleSubmit} className="space-y-5">
+        {/* Name Fields */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label htmlFor="firstName" className="block text-sm font-medium text-gray-200 mb-2">
+            <label htmlFor="firstName" className="block text-sm font-medium text-gray-200 mb-1.5">
               First name
             </label>
             <input
@@ -120,7 +120,7 @@ export default function SignupPage() {
             />
           </div>
           <div>
-            <label htmlFor="lastName" className="block text-sm font-medium text-gray-200 mb-2">
+            <label htmlFor="lastName" className="block text-sm font-medium text-gray-200 mb-1.5">
               Last name
             </label>
             <input
@@ -137,9 +137,9 @@ export default function SignupPage() {
           </div>
         </div>
 
-        {}
+        {/* Email */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-200 mb-2">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-200 mb-1.5">
             Email address
           </label>
           <input
@@ -155,9 +155,9 @@ export default function SignupPage() {
           />
         </div>
 
-        {}
+        {/* Password */}
         <div>
-          <label htmlFor="password" className="block text-sm font-medium text-gray-200 mb-2">
+          <label htmlFor="password" className="block text-sm font-medium text-gray-200 mb-1.5">
             Password
           </label>
           <div className="relative">
@@ -186,9 +186,9 @@ export default function SignupPage() {
           </div>
         </div>
 
-        {}
+        {/* Confirm Password */}
         <div>
-          <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-200 mb-2">
+          <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-200 mb-1.5">
             Confirm password
           </label>
           <div className="relative">
@@ -220,7 +220,7 @@ export default function SignupPage() {
           )}
         </div>
 
-        {}
+        {/* Terms */}
         <div className="flex items-start">
           <input
             id="agreeToTerms"
@@ -242,7 +242,7 @@ export default function SignupPage() {
           </label>
         </div>
 
-        {}
+        {/* Submit Button */}
         <div>
           <button
             type="submit"
@@ -254,8 +254,8 @@ export default function SignupPage() {
         </div>
       </form>
 
-      {}
-      <p className="mt-6 text-center text-sm text-gray-400">
+      {/* Sign in link */}
+      <p className="mt-5 text-center text-sm text-gray-400">
         Already have an account?{' '}
         <Link
           href="/login"
