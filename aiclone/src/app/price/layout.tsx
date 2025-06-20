@@ -1,5 +1,5 @@
-import Headeraction from "@/components/header-actions";
-import Footeraction from "@/components/footer-actions";
+import HeaderActions from "@/components/header-actions";
+import Footeractions from "@/components/footer-actions";
 import "../globals.css";
 export default function PriceLayout({
   children,
@@ -8,7 +8,7 @@ export default function PriceLayout({
 }>) {  return (
     <div className="min-h-screen flex flex-col">
       <header>
-        <Headeraction/>
+        <HeaderActions/>
         <a>price header</a>
       </header>
       
@@ -17,7 +17,7 @@ export default function PriceLayout({
       </main>
          
       <footer>
-        <Footeraction/>
+       <Footeractions />
       </footer>
     </div>
   );
