@@ -3,8 +3,9 @@ import { PricingCard } from "@/components/ui/dark-gradient-pricing"
 import { Cloud, Server, BarChart3, Sparkles, Users } from "lucide-react"
 
 export default function price() {
-  return (    <section className="relative overflow-hidden">
-      <div className="relative z-10 mx-auto max-w-5xl px-4 py-20 md:px-8">
+  return (    
+  <section>
+      <div className="relative  mx-auto max-w-5xl px-4 py-20 md:px-8">
         <div className="mb-12 space-y-3">
           <div className="text-center">
             <h2 className="relative inline-block text-3xl font-semibold leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
