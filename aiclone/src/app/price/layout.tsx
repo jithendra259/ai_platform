@@ -6,13 +6,13 @@ export default function PriceLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {  return (
-    <div className="min-h-screen flex flex-col">
+    <div >
       <header>
         <Headeractions/>
-        <a>price header</a>
+        
       </header>
       
-      <main className="flex-grow">
+      <main className="">
         {children}
       </main>
          
