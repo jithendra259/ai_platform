@@ -1,5 +1,5 @@
-import Headeraction from "@/components/ui/header-actions";
-import Footeraction from "@/components/ui/footer-actions";
+import HeaderActions from "@/components/header-actions";
+import Footeractions from "@/components/footer-actions";
 import ClientLayout from "@/components/ui/ClientLayout";
 
 
@@ -13,7 +13,7 @@ export default function ProductLayout({
   
       <ClientLayout>
         <header>
-          <Headeraction />
+          <HeaderActions/>
         </header>
 
         <main>
@@ -21,7 +21,7 @@ export default function ProductLayout({
         </main>
 
         <footer>
-          <Footeraction />
+          <Footeractions />
         </footer>
       </ClientLayout>
 
