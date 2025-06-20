@@ -132,7 +132,7 @@ export default function DocumentListener(){
   ];
     return(
       
-        <div className="min-h-screen bg-white dark:bg-[#0a0a0a]">
+        <div className="min-h-screen mx-auto max-w-[96rem] ">
             <header className="mt-10 ">
                 <div>
                     <AnimatedText
@@ -208,7 +208,7 @@ export default function DocumentListener(){
                 </div>
 
                 <div className="">
-                    <div className=" w-full">
+                    <div className=" w-full ">
                         <div className=" w-full overflow-hidden">
                              <div>
                               <div className="flex pr-8">
