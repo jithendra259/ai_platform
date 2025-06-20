@@ -1,5 +1,5 @@
-import Headeraction from "@/components/ui/header-actions";
-import Footeraction from "@/components/ui/footer-actions";
+import Headeraction from "@/components/header-actions";
+import Footeraction from "@/components/footer-actions";
 import ClientLayout from "@/components/ui/ClientLayout";
 
 
