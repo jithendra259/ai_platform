@@ -73,102 +73,102 @@ export default function ONLINE_TESTING() {
         </section>
 
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
-  {/* Card 1 */}
-  <div data-aos="fade-up-right" data-aos-duration="2000"
-       className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
-    <div className="flex flex-col md:flex-row items-center gap-6">
-      <Image src="/image/Online_testing/webcam security.webp" alt="Webcam Security" width={200} height={150}
-             className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
-      <div>
-        <h3 className="text-3xl font-semibold mb-2">Webcam Security</h3>
-        <p className="split-text text-xl">Begin by ensuring the integrity of your tests with built-in webcam monitoring, effectively deterring cheating attempts.</p>
-      </div>
-    </div>
-  </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
+          {/* Card 1 */}
+          <div data-aos="fade-up-right" data-aos-duration="2000"
+            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <Image src="/image/Online_testing/webcam security.webp" alt="Webcam Security" width={200} height={150}
+                className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
+              <div>
+                <h3 className="text-3xl font-semibold mb-2">Webcam Security</h3>
+                <p className="split-text text-xl">Begin by ensuring the integrity of your tests with built-in webcam monitoring, effectively deterring cheating attempts.</p>
+              </div>
+            </div>
+          </div>
 
-  {/* Card 2 */}
-  <div data-aos="fade-up-left" data-aos-duration="2000"
-       className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
-    <div className="flex flex-col-reverse md:flex-row items-center gap-6">
-      <div>
-        <h3 className="text-3xl font-semibold mb-2">Tab Locking</h3>
-        <p className="split-text text-xl">Maintain focus during tests by preventing users from accessing other tabs or applications.</p>
-      </div>
-      <Image src="/image/Online_testing/tabalert.webp" alt="Tab Locking" width={200} height={150}
-             className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
-    </div>
-  </div>
+          {/* Card 2 */}
+          <div data-aos="fade-up-left" data-aos-duration="2000"
+            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-6">
+              <div>
+                <h3 className="text-3xl font-semibold mb-2">Tab Locking</h3>
+                <p className="split-text text-xl">Maintain focus during tests by preventing users from accessing other tabs or applications.</p>
+              </div>
+              <Image src="/image/Online_testing/tabalert.webp" alt="Tab Locking" width={200} height={150}
+                className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
+            </div>
+          </div>
 
-  {/* Card 3 */}
-  <div data-aos="fade-up-right" data-aos-duration="2000"
-       className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-xl">
-    <div className="flex flex-col md:flex-row items-center gap-6">
-      <Image src="/image/Online_testing/tab-alert.webp" alt="Tab Alert" width={200} height={150}
-             className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
-      <div>
-        <h3 className="text-3xl font-semibold mb-2">Tab Alert</h3>
-        <p className="split-text text-xl">Stay informed with real-time alerts, notifying of unauthorized tab switching.</p>
-      </div>
-    </div>
-  </div>
+          {/* Card 3 */}
+          <div data-aos="fade-up-right" data-aos-duration="2000"
+            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-xl">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <Image src="/image/Online_testing/tab-alert.webp" alt="Tab Alert" width={200} height={150}
+                className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
+              <div>
+                <h3 className="text-3xl font-semibold mb-2">Tab Alert</h3>
+                <p className="split-text text-xl">Stay informed with real-time alerts, notifying of unauthorized tab switching.</p>
+              </div>
+            </div>
+          </div>
 
-  {/* Card 4 */}
-  <div data-aos="fade-up-left" data-aos-duration="2000"
-       className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
-    <div className="flex flex-col-reverse md:flex-row items-center gap-6">
-      <div>
-        <h3 className="text-3xl font-semibold mb-2">Right-Click Disable</h3>
-        <p className="split-text text-xl">Prevent users from copying or pasting information by disabling right-click functionality.</p>
-      </div>
-      <Image src="/image/Online_testing/disble right click.webp" alt="Right Click Disable" width={200} height={150}
-             className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
-    </div>
-  </div>
+          {/* Card 4 */}
+          <div data-aos="fade-up-left" data-aos-duration="2000"
+            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-6">
+              <div>
+                <h3 className="text-3xl font-semibold mb-2">Right-Click Disable</h3>
+                <p className="split-text text-xl">Prevent users from copying or pasting information by disabling right-click functionality.</p>
+              </div>
+              <Image src="/image/Online_testing/disble right click.webp" alt="Right Click Disable" width={200} height={150}
+                className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
+            </div>
+          </div>
 
-  {/* Card 5 */}
-  <div data-aos="fade-up-right" data-aos-duration="2000"
-       className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
-    <div className="flex flex-col md:flex-row items-center gap-6">
-      <Image src="/image/Online_testing/time limits.webp" alt="Time Limits" width={200} height={150}
-             className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
-      <div>
-        <h3 className="text-3xl font-semibold mb-2">Time Limits</h3>
-        <p className="split-text text-xl">Set time limits to simulate real-world conditions and encourage timely completion.</p>
-      </div>
-    </div>
-  </div>
+          {/* Card 5 */}
+          <div data-aos="fade-up-right" data-aos-duration="2000"
+            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <Image src="/image/Online_testing/time limits.webp" alt="Time Limits" width={200} height={150}
+                className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
+              <div>
+                <h3 className="text-3xl font-semibold mb-2">Time Limits</h3>
+                <p className="split-text text-xl">Set time limits to simulate real-world conditions and encourage timely completion.</p>
+              </div>
+            </div>
+          </div>
 
-  {/* Card 6 */}
-  <div data-aos="fade-up-left" data-aos-duration="2000"
-       className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
-    <div className="flex flex-col md:flex-row items-center gap-6">
-      <div>
-        <h3 className="text-3xl font-semibold mb-2">Question Randomization</h3>
-        <p className="split-text text-xl">Randomize questions to reduce the chances of collaboration and ensure fairness.</p>
-      </div>
-      <Image src="/image/Online_testing/question randmization.webp" alt="Question Randomization" width={200}
-             height={150} className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
-    </div>
-  </div>
+          {/* Card 6 */}
+          <div data-aos="fade-up-left" data-aos-duration="2000"
+            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div>
+                <h3 className="text-3xl font-semibold mb-2">Question Randomization</h3>
+                <p className="split-text text-xl">Randomize questions to reduce the chances of collaboration and ensure fairness.</p>
+              </div>
+              <Image src="/image/Online_testing/question randmization.webp" alt="Question Randomization" width={200}
+                height={150} className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
+            </div>
+          </div>
 
-  {/* Card 7 */}
-  <div data-aos="fade-up-right" data-aos-duration="2000"
-       className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
-    <div className="flex flex-col md:flex-row items-center gap-6">
-      <Image src="/image/Online_testing/auto-submitted.webp" alt="Auto Submission" width={200} height={150}
-             className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
-      <div>
-        <h3 className="text-3xl font-semibold mb-2">Auto Submission</h3>
-        <p className="split-text text-xl">Automatically submit tests when time expires or user completes the test.</p>
-      </div>
-    </div>
-  </div>
-</div>
+          {/* Card 7 */}
+          <div data-aos="fade-up-right" data-aos-duration="2000"
+            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <Image src="/image/Online_testing/auto-submitted.webp" alt="Auto Submission" width={200} height={150}
+                className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
+              <div>
+                <h3 className="text-3xl font-semibold mb-2">Auto Submission</h3>
+                <p className="split-text text-xl">Automatically submit tests when time expires or user completes the test.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
-        <section data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" className="text-center text-white mt-20">
+        <section data-aos="fade-up" data-aos-duration="000"  className="text-center text-white mt-20">
           <h2 className="text-3xl font-bold mb-4">Ready to try it out?</h2>
           <p className="mb-6">Over 20k+ users on ScholarRank. Join them.</p>
           <div className="flex flex-wrap justify-center cursor-pointer gap-4">

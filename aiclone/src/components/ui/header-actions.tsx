@@ -19,40 +19,41 @@ export default function HeaderActions() {
 
   return (
     <header className="bg-black text-white px-4 py-3 flex flex-wrap justify-between items-center mx-auto max-w-[96rem] relative">
-
-
+      <Link href="/">
       <div className="flex items-center space-x-2">
         <Image src="/logo-sm.png" alt="logo" width={48} height={48} className="object-cover" />
         <h2 className="text-3xl sm:text-4xl font-bold">ScholarRank</h2>
       </div>
+      </Link>
 
-      
-      <button
-        className="sm:hidden text-white text-3xl"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? "✕" : "☰"}
-      </button>
+      {/* Hamburger Button – now uses isMobile instead of sm:hidden */}
+      {isMobile && (
+        <button
+          className="text-white cursor-pointer text-3xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? "✕" : "☰"}
+        </button>
+      )}
 
-     
+      {/* Menu wrapper */}
       <div
         className={`
-    ${menuOpen || !isMobile ? "flex" : "hidden"} 
-    sm:flex flex-col sm:flex-row items-center justify-center 
-    space-y-4 sm:space-y-0 sm:space-x-6 
-    w-full sm:w-auto mt-4 sm:mt-0
-    ${menuOpen && isMobile ? "bg-gray-900 rounded-lg p-4 shadow-lg" : ""}
+    ${menuOpen || !isMobile ? "flex" : "hidden"}
+    ${isMobile ? "absolute top-20 left-0 w-full h-[calc(100vh-5rem)] bg-gray-900 flex-col items-center justify-center space-y-6 text-center z-50" : "sm:flex-row items-center justify-end space-x-6"}
+    mt-4 sm:mt-0
   `}
       >
 
+        {/* Home
         <Link href="/">
           <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
             <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
             <span className="relative z-10 group-hover:text-black">Home</span>
           </span>
-        </Link>
+        </Link> */}
 
-       
+        {/* Products */}
         <div
           className={`relative ${!isMobile ? "group" : ""} cursor-pointer`}
           onClick={() => {
@@ -64,10 +65,8 @@ export default function HeaderActions() {
             <span className="relative z-10 group-hover:text-black">Products</span>
           </span>
 
-       
           <div
-            className={`
-              absolute left-1/2 -translate-x-1/2 mt-2 w-72 bg-white text-black shadow-lg rounded-lg p-4 z-50
+            className={`absolute left-1/2 -translate-x-1/2 mt-2 w-72 bg-white text-black shadow-lg rounded-lg p-4 z-50
               ${isMobile
                 ? productOpen
                   ? "block"
@@ -118,11 +117,17 @@ export default function HeaderActions() {
                   <p className="text-sm text-gray-600">Create Memes, Jokes, Videos</p>
                 </li>
               </Link>
+              <Link href="/Chat Ui">
+                <li className="p-2 hover:bg-gray-400 rounded-lg cursor-pointer">
+                  <p className="font-bold">🎭 Chat Ui</p>
+                  <p className="text-sm text-gray-600"> Chat. Learn. Grow.</p>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
 
-        
+        {/* Pricing */}
         <Link href="/price">
           <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
             <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
@@ -130,25 +135,21 @@ export default function HeaderActions() {
           </span>
         </Link>
 
-        <Link href="/login">
-          <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
-            <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
-            <span className="relative z-10 group-hover:text-black">LogIn</span>
-          </span>
-        </Link>
-        <Link href="/signup">
-          <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
-            <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
-            <span className="relative z-10 group-hover:text-black">SignUp</span>
-          </span>
-        </Link>
-        <Link href="/chat_ui">
-          <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
-            <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
-            <span className="relative z-10 group-hover:text-black">Chat UI</span>
-          </span>
-        </Link>
-
+        {/* Login & Signup Buttons */}
+        <div className="flex gap-4">
+          <Link href="/login">
+            <button className="relative overflow-hidden rounded-full px-6 py-2 text-black text-lg font-semibold bg-white group transition-all duration-300">
+              <span className="absolute inset-0 z-0 scale-x-0 group-hover:scale-x-100 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 transition-transform duration-500 origin-left rounded-full"></span>
+              <span className="relative z-10 group-hover:text-black">LogIn</span>
+            </button>
+          </Link>
+          <Link href="/signup">
+            <button className="relative overflow-hidden rounded-full px-6 py-2 text-black text-lg font-semibold bg-white group transition-all duration-300">
+              <span className="absolute inset-0 z-0 scale-x-0 group-hover:scale-x-100 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 transition-transform duration-500 origin-left rounded-full"></span>
+              <span className="relative z-10 group-hover:text-black">SignUp</span>
+            </button>
+          </Link>
+        </div>
       </div>
     </header>
   );
