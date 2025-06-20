@@ -16,7 +16,7 @@ export default function ProductLayout({
           <Headeraction />
         </header>
 
-        <main>
+        <main className="dark">
           {children}
         </main>
 
