@@ -19,18 +19,19 @@ export default function HeaderActions() {
   }, []);
 
   return (
+    <div className="">
     
     <header className="bg-black text-white px-4 py-3 flex flex-wrap justify-between items-center mx-auto max-w-[96rem] relative">
-        <div className="flex flex-col items-center">
-          <LightPullThemeSwitcher />
-          <p className="text-sm text-neutral-500">Pull down to change theme</p>
-        </div>
+        
       <Link href="/">
         <div className="flex items-center space-x-2">
           <Image src="/logo-sm.png" alt="logo" width={48} height={48} className="object-cover" />
           <h2 className="text-3xl sm:text-4xl font-bold">ScholarRank</h2>
         </div>
+
+        
       </Link>
+      
 
       {/* Hamburger Button – now uses isMobile instead of sm:hidden */}
       {isMobile && (
@@ -160,5 +161,12 @@ export default function HeaderActions() {
 
       </div>
     </header>
+     <div className="absolute hidden md:block" >
+            <LightPullThemeSwitcher/>
+            {/* <p className="text-sm text-neutral-500">Pull down to change theme</p> */}
+      </div>
+    
+    </div>
+    
   );
 }

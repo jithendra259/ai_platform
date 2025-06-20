@@ -32,7 +32,7 @@ export default function ONLINE_TESTING() {
   }, []);
   return (
     <>
-      <div className=" px-4 md:px-20 lg:px-32 py-10 bg-black mx-auto max-w-[96rem] ">
+      <div className=" px-4 md:px-20 lg:px-32 py-10  mx-auto max-w-[96rem] ">
         <h1 data-aos="fade-right" data-aos-duration="2000" className="text-4xl md:text-5xl text-white text-center font-bold mb-15">ONLINE_TESTING</h1>
         <section data-aos="fade-down" data-aos-duration="3000" data-aos-delay="100" className="text-center  text-white mb-12 ">
           <div className="flex flex-row md:flex-row items-center mb-3  ">
@@ -68,8 +68,8 @@ export default function ONLINE_TESTING() {
         </section>
 
         <section data-aos="zoom-in" data-aos-duration="2000" className="text-center  mb-16">
-          <h2 className="text-3xl font-bold text-white mb-2">The only AI tool you need!</h2>
-          <p className="split-text text-2xl  text-gray-400">Ask anything, generate questions using AI, understand your documents easily, and much more.</p>
+          <h2 className="text-3xl font-bold text-black dark:text-white mb-2">The only AI tool you need!</h2>
+          <p className="split-text text-2xl  text-gray-700 dark:text-white">Ask anything, generate questions using AI, understand your documents easily, and much more.</p>
         </section>
 
 
