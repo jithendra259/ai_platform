@@ -1,103 +1,153 @@
-import Image from "next/image";
+// import HeroSection from '@/components/hero-section';
+// import FeaturesSection from '@/components/features-section';
+// import CtaSection from '@/components/cta-section';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import HeaderAction from '@/components/header-actions';
+import Footer_actions from '@/components/footer-actions';
+const featureTabs = [
+  {
+    value: "tab-1",
+    title: "Ask AI",
+    description: "Experience ChatGPT-4, cloude-3, Mistral AI, Cloude Instant and many leading AI Model with One Simple Subscription!",
+    content: "Your personal AI-powered chat companion, Ask AI, enhances online conversations by providing engaging, informative, and enjoyable interactions. With advanced AI technology, Ask AI simplifies chatting by understanding natural language, making interactions easy and fun."
+  },
+  {
+    value: "tab-2",
+    title: "AI QuestionGen",
+    content: "Welcome to Ai QuestionGen, your revolutionary solution for effortlessly generating tests in minutes! With Ai QuestionGen, you can simply upload your file or enter a paragraph, enter your desired topics, and watch as our advanced AI technology instantly creates customized tests tailored to your specifications. Say goodbye to tedious manual test creation and hello to a seamless, time-saving process."
+  },
+  {
+    value: "tab-3",
+    title: "File AI",
+    content: "File AI is a powerful tool that allows you to upload any file and ask questions about its content. Whether it's a PDF, Word document, or any other file type, File AI can analyze the text and provide accurate answers to your queries. This feature is perfect for quickly extracting information from large documents or understanding complex materials without having to read everything."
+  },
+  {
+    value: "tab-4",
+    title: "Online Testing",
+    content: "Online Testing is a feature that allows you to create and conduct tests online. You can set up multiple-choice questions, short answer questions, and more. This feature is ideal for educators and trainers who want to assess knowledge in a flexible and efficient manner."
+  },
+  {
+    value: "tab-5",
+    title: "Procut",
+    content: "Procut is a cutting-edge tool designed to enhance your productivity by automating repetitive tasks. Whether it's data entry, content generation, or any other routine activity, Procut streamlines your workflow, allowing you to focus on more important aspects of your work."
+  },
+  {
+    value: "tab-6",
+    title: "AI Tutor",
+    content: "AI Tutor is your personal learning assistant that provides tailored educational support. Whether you need help with math, science, language learning, or any other subject, AI Tutor adapts to your learning style and pace, offering explanations, practice problems, and feedback to enhance your understanding."
+  },
+  {
+    value: "tab-7",
+    title: "Document Listener",
+    content: "Document Listener is a feature that allows you to upload documents and have them read aloud. This is particularly useful for those who prefer auditory learning or need assistance with reading comprehension. Simply upload your document, and Document Listener will convert the text to speech, making it accessible and easy to understand."
+  }
+];
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gray-900 text-gray-100">
+      <HeaderAction />
+      {/* <HeroSection />
+      <FeaturesSection /> */}
+      
+      <section className="py-12 px-4 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+          Explore Our Features
+        </h2>
+        
+        <div className="flex justify-center">
+          <Tabs defaultValue="tab-1" className="w-full max-w-4xl">
+            <TabsList className="grid grid-cols-4 md:grid-cols-7 gap-2 bg-gray-800 p-2 rounded-lg">
+              {featureTabs.map((tab) => (
+                <TabsTrigger 
+                  key={tab.value}
+                  value={tab.value}
+                  className="text-xs md:text-sm px-2 py-1 rounded-md data-[state=active]:bg-gray-700 data-[state=active]:text-white hover:bg-gray-700 transition-colors"
+                >
+                  {tab.title}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            
+            {featureTabs.map((tab) => (
+              <TabsContent key={tab.value} value={tab.value} className="mt-6">
+                <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
+                  <h3 className="text-xl font-semibold text-center mb-4 text-blue-300">
+                    {tab.title}
+                  </h3>
+                  {tab.description && (
+                    <p className="text-center text-gray-300 mb-4">
+                      {tab.description}
+                    </p>
+                  )}
+                  <p className="text-gray-300">
+                    {tab.content}
+                  </p>
+                </div>
+              </TabsContent>
+            ))}
+          </Tabs>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div>
+            <br /><br />
+          <h2 className="text-3xl font-bold text-center mt-12 mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+            Effortlessly incorporate ScholarRankAI into your existing system.
+          </h2>
+
+          <div className='items-center justify-center flex flex-wrap gap-10 w-8xl'>
+            <div className='items-text-center'>
+              <img src="/homepage_images/blackboud.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <a>Blackboud</a>
+            </div>
+            <div>
+              <img src="/homepage_images/brightspace.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <a>BrightSpace</a>
+            </div>
+            <div>
+              <img src="/homepage_images/email.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <a>Email</a>
+            </div>
+
+            <div>
+              <img src="/homepage_images/firabase.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <a>Firebase</a>
+            </div>
+
+            <div>
+              <img src="/homepage_images/moodle.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <a>Moodle</a>
+            </div>
+            <div>
+              <img src="/homepage_images/schoology.png" alt="Hero Image" className="shadow-lg w-30 h-15" />
+              <a>Schoology</a>
+            </div>
+
+            <div>
+              <img src="/homepage_images/skyward.png" alt="Hero Image" className="shadow-lg w-20 h-15" />
+              <a>Skyward</a>
+            </div>
+
+            <div>
+              <img src="/homepage_images/slack.png" alt="Hero Image" className="shadow-lg h-15" />
+              <a>Slack</a>
+            </div>
+
+            <div>
+              <img src="/homepage_images/tally.png" alt="Hero Image" className="shadow-lg h-15" />
+              <a>Tally</a>
+            </div>
+
+            <div>
+              <img src="/homepage_images/webhook.png" alt="Hero Image" className="shadow-lg h-15" />
+              <a>Webhook</a>
+            </div>            
+          </div>
+        </div>
+      </section>
+      
+      {/* <CtaSection /> */}
+
+      <Footer_actions />
     </div>
   );
 }
