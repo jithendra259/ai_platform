@@ -168,7 +168,7 @@ export default function ONLINE_TESTING() {
 
 
 
-        <section data-aos="fade-up" data-aos-duration="000"  className="text-center text-white mt-20">
+        <section data-aos="fade-up" data-aos-duration="2000"  className="text-center text-white mt-20">
           <h2 className="text-3xl font-bold mb-4">Ready to try it out?</h2>
           <p className="mb-6">Over 20k+ users on ScholarRank. Join them.</p>
           <div className="flex flex-wrap justify-center cursor-pointer gap-4">
