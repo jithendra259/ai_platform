@@ -4,7 +4,9 @@ import Image from "next/image";
 // ----- HeroSection -----
 const HeroSection = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between gap-12 py-20 px-4 lg:px-24 bg-black text-white">
+
+
+    <section className="flex flex-col md:flex-row mx-auto max-w-[96rem] items-center justify-between gap-12 py-20 px-4 lg:px-24 bg-black text-white">
       <div className="flex-1 animate-slide-left">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-text-pop">
           Explore the Future with <span className="text-blue-500">Ask AI</span>
@@ -35,6 +37,7 @@ const HeroSection = () => {
         />
       </div>
     </section>
+   
   );
 };
 // ----- FeatureCard -----
@@ -48,7 +51,7 @@ const FeatureCard = ({ icon, title, desc }: { icon: string; title: string; desc:
 
 // ----- FeatureGrid -----
 const FeatureGrid = () => (
-  <section className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+  <section className="mt-24 mx-auto max-w-[96rem] grid grid-cols-1 md:grid-cols-3 gap-8">
     <FeatureCard
       icon="🤖"
       title="Multi-Model Access"
@@ -69,7 +72,7 @@ const FeatureGrid = () => (
 
 // ----- CTASection -----
 const CTASection = () => (
-  <section className="text-center mt-32 animate-fade-in-up delay-500">
+  <section className="mx-auto max-w-[96rem] text-center mt-32 animate-fade-in-up delay-500">
     <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-text-pop">
       Ready to Supercharge Your Conversations?
     </h2>
@@ -96,3 +99,4 @@ const AskAIPromoPage = () => {
 };
 
 export default AskAIPromoPage;
+

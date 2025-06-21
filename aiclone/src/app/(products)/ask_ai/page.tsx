@@ -17,9 +17,9 @@ const HeroSection = () => {
   const mounted = useClient();
 
   return (
-    <section className="py-20 px-4 lg:px-24 bg-black">
+    <section className="py-20 px-4 lg:px-24 mx-auto max-w-[96rem] bg-black">
       <div className="text-center mb-12">
-        <h1 className={`relative inline-block text-3xl md:text-4xl lg:text-[35px] font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-500 hover:after:w-full hover:text-blue-500 transition-colors duration-300 ${mounted ? "animate-fade-in" : ""}`}>
+        <h1 className={`relative inline-block text-4xl md:text-4xl lg:text-[35px] font-bold after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-500 hover:after:w-full hover:text-blue-500 transition-colors duration-300 ${mounted ? "animate-fade-in" : ""}`}>
           Ask AI
         </h1>
       </div>
@@ -83,7 +83,7 @@ const FeatureBlock = ({ title, points, imgSrc, reverse = false }: FeatureBlockPr
     : "md:flex-row";
 
   return (
-    <div className={`flex flex-col ${flexClass} items-center gap-6 group transition-transform duration-300 hover:scale-[1.02]`}>
+    <div className= {` mx-auto max-w-[96rem] flex flex-col ${flexClass} items-center gap-6 group transition-transform duration-300 hover:scale-[1.02]`}>
       <div className="transition-transform duration-500 group-hover:rotate-1 group-hover:scale-105">
         <Image
           src={imgSrc}
@@ -109,7 +109,7 @@ const FeatureBlock = ({ title, points, imgSrc, reverse = false }: FeatureBlockPr
 
 // ----- FeatureSection -----
 const FeatureSection = () => (
-  <section className="py-16 px-4 lg:px-24 grid gap-16 bg-black">
+  <section className="py-16 mx-auto max-w-[96rem] px-4 lg:px-24 grid gap-16 bg-black">
     <FeatureBlock
       title="Experience Ask AI and Leading AI Models for Free!"
       imgSrc="/image/ask_aipic/chatbot1.webp"
@@ -125,7 +125,7 @@ const FeatureSection = () => (
 
     <FeatureBlock
       title="Versatile Assistance"
-      imgSrc="/askai/chatbot2.webp"
+      imgSrc="/image/ask_aipic/chatbot2.webp"
       points={[
         "Comprehensive support for various conversational needs.",
         "Helps answer questions and spark creativity.",
@@ -150,7 +150,7 @@ const FeatureSection = () => (
 
 // ----- CTA Section -----
 const CTASection = () => (
-  <section className="py-16 px-4 lg:px-24 text-center bg-black">
+  <section className="py-16 mx-auto max-w-[96rem] px-4 lg:px-24 text-center bg-black">
     <h2 className="text-2xl md:text-3xl font-bold mb-4 transition-colors duration-300 hover:text-blue-500">
       Ready to try it out?
     </h2>
@@ -170,7 +170,7 @@ const CTASection = () => (
 
 // ----- Main Page -----
 const AskAIPage = () => (
-  <main className="min-h-screen bg-black text-white">
+  <main className="min-h-screen mx-auto max-w-[96rem] bg-black text-white">
     <HeroSection />
     <IntroSection />
     <FeatureSection />
