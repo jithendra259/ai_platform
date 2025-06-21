@@ -22,7 +22,7 @@ const Benefit = ({ text, checked }: BenefitProps) => {
           <X className="size-3" />
         </span>
       )}
-      <span className="text-sm dark:text-zinc-300 text-zinc-600">{text}</span>
+      <span className="text-sm text-zinc-300 dark:text-zinc-400">{text}</span>
     </div>
   )
 }
@@ -51,17 +51,24 @@ export const PricingCard = ({
       initial={{ filter: "blur(2px)" }}
       whileInView={{ filter: "blur(0px)" }}
       transition={{ duration: 0.5, ease: "easeInOut", delay: 0.25 }}
+      whileHover={{ scale: 1.045, y: -10, boxShadow: '0 8px 32px 0 rgba(0,0,0,0.18)' }}
+      style={{ cursor: 'pointer' }}
     >
       <Card
         className={cn(
-          "relative h-full w-full overflow-hidden border",
+          "relative h-full w-full flex flex-col overflow-hidden border",
           "border-zinc-800 bg-gradient-to-br from-zinc-900/50 to-zinc-800/80",
           "p-6",
           className,
         )}
       >
-        <div className="flex flex-col items-center border-b pb-6 dark:border-zinc-700 border-zinc-200">
-          <span className="mb-6 inline-block dark:text-zinc-50 text-zinc-900">
+        <div className="relative flex flex-col items-center pb-6">
+          <span className={cn(
+            "mb-6 inline-block font-medium",
+            theme === 'purple' && "text-purple-500",
+            theme === 'teal' && "text-teal-500",
+            theme === 'gray' && "text-[#FFA500]"
+          )}>
             {tier}
           </span>
           <span className="mb-3 inline-block text-4xl font-medium">
@@ -70,24 +77,29 @@ export const PricingCard = ({
           <span className="dark:bg-gradient-to-br dark:from-zinc-200 dark:to-zinc-500 bg-gradient-to-br from-zinc-700 to-zinc-900 bg-clip-text text-center text-transparent">
             {bestFor}
           </span>
+          <div className="absolute left-0 w-full" style={{ top: '88px' }}>
+            <div className="mx-6 h-[2px] bg-white opacity-80 rounded" />
+          </div>
         </div>
-        <div className="space-y-4 py-9">
+        <div className="flex-1 space-y-4 py-9">
           {benefits.map((benefit, index) => (
             <Benefit key={index} {...benefit} />
           ))}
         </div>
-        <Button
-          className={cn(
-            "w-full transition-colors",
-            theme === 'purple' && "hover:bg-purple-500 hover:text-white",
-            theme === 'teal' && "hover:bg-teal-500 hover:text-white",
-            theme === 'gray' && "hover:bg-gray-500 hover:text-white",
-            !theme && "hover:bg-zinc-800 hover:text-white"
-          )}
-          variant="ghost"
-        >
-          {CTA}
-        </Button>
+        <div className="mt-auto">
+          <Button
+            className={cn(
+              "w-full transition-colors",
+              theme === 'purple' && "hover:bg-purple-500 hover:text-white",
+              theme === 'teal' && "hover:bg-teal-500 hover:text-white",
+              theme === 'gray' && "hover:bg-[#FFA500] hover:text-white text-[#FFA500] border-[#FFA500] border",
+              !theme && "hover:bg-zinc-800 hover:text-white"
+            )}
+            variant="ghost"
+          >
+            {CTA}
+          </Button>
+        </div>
       </Card>
     </motion.div>
   );
