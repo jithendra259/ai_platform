@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
 
 
-    <section className="flex flex-col md:flex-row mx-auto max-w-[96rem] items-center justify-between gap-12 py-20 px-4 lg:px-24 bg-black text-white">
+    <section className="flex flex-col md:flex-row mx-auto max-w-[96rem] items-center justify-between gap-12 py-20 px-4 lg:px-24 ">
       <div className="flex-1 animate-slide-left">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-text-pop">
           Explore the Future with <span className="text-blue-500">Ask AI</span>
