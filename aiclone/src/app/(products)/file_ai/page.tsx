@@ -27,11 +27,11 @@ const HeroSection = () => {
 
       <div className="flex-1 animate-scale-up flex justify-center">
         <Image
-          src="/askai/chatbot.webp"
+          src="/image/ask_aipic/chatbot.webp"
           alt="AI Chatbot Illustration"
           width={450}
           height={450}
-          className="rounded-xl shadow-xl hover:scale-105 transition-transform duration-500"
+          className="rounded-4xl shadow-xl hover:scale-105 transition-transform duration-500"
         />
       </div>
     </section>

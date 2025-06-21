@@ -52,13 +52,6 @@ export default function HeaderActions() {
   `}
       >
 
-        {/* Home
-        <Link href="/">
-          <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
-            <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
-            <span className="relative z-10 group-hover:text-black">Home</span>
-          </span>
-        </Link> */}
 
         {/* Products */}
         <div
@@ -124,7 +117,7 @@ export default function HeaderActions() {
                   <p className="text-sm text-gray-600">Create Memes, Jokes, Videos</p>
                 </li>
               </Link>
-              <Link href="/Chat Ui">
+              <Link href="/Chat_Ui">
                 <li className="p-2 hover:bg-gray-400 rounded-lg cursor-pointer">
                   <p className="font-bold">🎭 Chat Ui</p>
                   <p className="text-sm text-gray-600"> Chat. Learn. Grow.</p>

@@ -43,11 +43,11 @@ const HeroSection = () => {
         <div className={`flex-1 flex justify-center ${mounted ? "animate-scale-up" : ""}`}>
           <div className="transition-transform duration-500 hover:scale-110 hover:rotate-1">
             <Image
-              src="/askai/chatbot.webp"
+              src="/image/ask_aipic/chatbot.webp"
               alt="Chatbot"
               width={350}
               height={350}
-              className="rounded-lg shadow-md w-full max-w-[350px] h-auto"
+              className="rounded-4xl shadow-md w-full max-w-[350px] h-auto"
             />
           </div>
         </div>
@@ -90,7 +90,7 @@ const FeatureBlock = ({ title, points, imgSrc, reverse = false }: FeatureBlockPr
           alt={title}
           width={480}
           height={480}
-          className="rounded-full object-cover w-full max-w-[300px] md:max-w-[480px] h-auto shadow-md"
+          className="rounded-4xl object-cover w-full max-w-[300px] md:max-w-[480px] h-auto shadow-md"
         />
       </div>
       <div className="transition-colors duration-300 group-hover:text-blue-400">
@@ -112,7 +112,7 @@ const FeatureSection = () => (
   <section className="py-16 px-4 lg:px-24 grid gap-16 bg-black">
     <FeatureBlock
       title="Experience Ask AI and Leading AI Models for Free!"
-      imgSrc="/askai/chatbot1.webp"
+      imgSrc="/image/ask_aipic/chatbot1.webp"
       reverse
       points={[
         "Ask anything, generate questions, understand documents, and much more.",
@@ -136,7 +136,7 @@ const FeatureSection = () => (
 
     <FeatureBlock
       title="Effortless Conversations"
-      imgSrc="/askai/chatbot3.webp"
+      imgSrc="/image/ask_aipic/chatbot3.webp"
       reverse
       points={[
         "Powered by advanced AI for smooth and responsive chats.",
