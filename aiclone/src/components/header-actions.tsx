@@ -19,7 +19,7 @@ export default function HeaderActions() {
   }, []);
 
   return (
-    <div className="">
+    <div className="mx-auto max-w-[96rem]">
     
     <header className="bg-black text-white px-4 py-3 flex flex-wrap justify-between items-center mx-auto max-w-[96rem] relative">
         
@@ -154,7 +154,7 @@ export default function HeaderActions() {
 
       </div>
     </header>
-     <div className="absolute hidden md:block" >
+     <div className="absolute hidden md:block mx-auto" >
             <LightPullThemeSwitcher/>
             {/* <p className="text-sm text-neutral-500">Pull down to change theme</p> */}
       </div>
