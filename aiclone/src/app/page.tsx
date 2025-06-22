@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import HeaderAction from '@/components/header-actions';
 import Footer_actions from '@/components/footer-actions';
 import React from 'react';
+import Image from 'next/image';
 
 const featureTabs = [
   {
@@ -49,7 +50,20 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
       <HeaderAction />
-       <HeroSection />
+      <HeroSection />
+      <div className='items-center justify-center text-center flex-col mt-10 mb-10'>
+        <a >Trusted by 18000+ monthly active users globally</a>
+        <div className='items-center justify-center text-center flex flex-wrap gap-8 mt-4'>
+          <img src="image/homepage/katihar_engeering_logo (1).png" className='bg-white' alt="alt" width={120} height={70} />
+          <img src="image/homepage/iit_delhi_logo.png" alt="alt" width={70} height={70} />
+          <img src="image/homepage/niet_noida_logo.svg" className='bg-white' alt="alt" width={110} height={70} />
+          <img src="image/homepage/fiit_jee_logo.png" alt="alt"  width={120} height={70} />
+          <img src="image/homepage/unc_cordoba_logo.png" alt="alt" width={120} height={70} />
+          <img src="image/homepage/suffolk_uni_logo.png" alt="alt" width={80} height={70} />
+        </div>
+        
+      </div>
+
       <FeaturesSection />
       
       <section className="py-12 px-4 max-w-6xl mx-auto">

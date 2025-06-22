@@ -131,7 +131,7 @@ export default function HeaderActions() {
           {/* Pricing */}
           <Link href="/price">
             <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
-              <span className="absolute inset-0  scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
+              <span className="absolute inset-0  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-lg "></span>
               <span className="relative z-10 dark:group-hover:text-white group-hover:font-semibold">Pricing</span>
             </span>
           </Link>
