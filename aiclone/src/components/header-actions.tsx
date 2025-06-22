@@ -46,9 +46,9 @@ export default function HeaderActions() {
         {/* Menu wrapper */}
         <div className={`
           transition-all duration-500 ease-in-out
-          ${!isMobile || menuOpen ? "h-[180px] flex" : "hidden"}
+          ${!isMobile || menuOpen ? " flex" : "hidden"}
             ${isMobile
-            ? "absolute top-20 left-0 w-full dark:text-white bg-gray-700 flex-col items-center justify-center space-y-6 text-left z-50"
+            ? "absolute top-20 left-0 w-full h-[180px] dark:text-white bg-gray-700 flex-col items-center justify-center space-y-6 text-left z-50"
             : "flex-row items-center justify-end space-x-6"}
              mt-4 sm:mt-0
              `}>
