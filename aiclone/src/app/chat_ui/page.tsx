@@ -89,7 +89,7 @@ export default function ChatPage() {
   }
 
   return (
-    <div className={`flex flex-col h-full ${themeClasses.background} relative overflow-hidden`}>
+    <div className={`flex flex-col h-screen mx-auto max-w-[96rem] ${themeClasses.background} relative overflow-hidden`}>
       {/* Background */}
       <div className={`absolute inset-0 ${themeClasses.gradient}`}>
         <div className="absolute inset-0 opacity-20">
@@ -152,7 +152,7 @@ export default function ChatPage() {
       </div>
 
       {/* Input Area */}
-      <div className={`p-6 border-t ${themeClasses.borderColor} ${isDark ? 'bg-gray-900/30' : 'bg-gray-100/30'} backdrop-blur-sm relative z-10`}>
+      <div className={`p-6 border-t ${themeClasses.borderColor} ${isDark ? 'bg-gray-900/30' : 'bg-gray-100/30'} backdrop-blur-sm`}>
         <div className="max-w-4xl mx-auto space-y-4">
           <div className={`relative flex items-end ${themeClasses.inputBg} rounded-2xl border ${themeClasses.inputBorder} ${themeClasses.inputFocus} focus-within:ring-2 transition-all duration-200 shadow-lg backdrop-blur-sm`}>
             <div className="flex-1 flex items-end min-h-[3rem]">

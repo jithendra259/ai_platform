@@ -93,7 +93,7 @@ export default function ChatUILayout({
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-      <div className={`flex h-screen ${themeClasses.background} ${themeClasses.text} overflow-hidden`}>
+      <div className={`flex h-screen ${themeClasses.background} ${themeClasses.text}  mx-auto max-w-[96rem]`}>
         {/* Sidebar */}
         <div 
           className={`${
