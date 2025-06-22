@@ -33,11 +33,11 @@ export default function ONLINE_TESTING() {
   return (
     <>
       <div className=" px-4 md:px-20 lg:px-32 py-10  mx-auto max-w-[96rem] ">
-        <h1 data-aos="fade-right" data-aos-duration="2000" className="text-4xl md:text-5xl text-white text-center font-bold mb-15">ONLINE_TESTING</h1>
-        <section data-aos="fade-down" data-aos-duration="3000" data-aos-delay="100" className="text-center  text-white mb-12 ">
+        <h1 data-aos="fade-right" data-aos-duration="2000" className="text-4xl md:text-5xl text-black dark:text-white text-center font-bold mb-15">ONLINE_TESTING</h1>
+        <section data-aos="fade-down" data-aos-duration="3000" data-aos-delay="100" className="text-center dark:text-white  text-black mb-12 ">
           <div className="flex flex-row md:flex-row items-center mb-3  ">
             <div className=" text-2xl text-blue-500"><a href="/">Products</a></div>
-            <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+            <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#eeeee" fill="none">
               <path
                 d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
                 stroke="currentColor"
@@ -69,14 +69,14 @@ export default function ONLINE_TESTING() {
 
         <section data-aos="zoom-in" data-aos-duration="2000" className="text-center  mb-16">
           <h2 className="text-3xl font-bold text-black dark:text-white mb-2">The only AI tool you need!</h2>
-          <p className="split-text text-2xl  text-gray-700 dark:text-white">Ask anything, generate questions using AI, understand your documents easily, and much more.</p>
+          <p className="split-text text-2xl  text-gray-700 dark:text-gray-400">Ask anything, generate questions using AI, understand your documents easily, and much more.</p>
         </section>
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
           {/* Card 1 */}
           <div data-aos="fade-up-right" data-aos-duration="2000"
-            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            className="bg-[#fffff] dark:text-white text-black p-6 rounded-4xl leading-tight transition-transform transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <Image src="/image/Online_testing/webcam security.webp" alt="Webcam Security" width={200} height={150}
                 className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
@@ -89,7 +89,7 @@ export default function ONLINE_TESTING() {
 
           {/* Card 2 */}
           <div data-aos="fade-up-left" data-aos-duration="2000"
-            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            className="bg-[#fffff] dark:text-white  text-black p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <div className="flex flex-col-reverse md:flex-row items-center gap-6">
               <div>
                 <h3 className="text-3xl font-semibold mb-2">Tab Locking</h3>
@@ -102,7 +102,7 @@ export default function ONLINE_TESTING() {
 
           {/* Card 3 */}
           <div data-aos="fade-up-right" data-aos-duration="2000"
-            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-xl">
+            className="bg-[#fffff] dark:text-white  text-black p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <Image src="/image/Online_testing/tab-alert.webp" alt="Tab Alert" width={200} height={150}
                 className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
@@ -115,7 +115,7 @@ export default function ONLINE_TESTING() {
 
           {/* Card 4 */}
           <div data-aos="fade-up-left" data-aos-duration="2000"
-            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            className="bg-[#fffff] dark:text-white  text-black p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <div className="flex flex-col-reverse md:flex-row items-center gap-6">
               <div>
                 <h3 className="text-3xl font-semibold mb-2">Right-Click Disable</h3>
@@ -128,7 +128,7 @@ export default function ONLINE_TESTING() {
 
           {/* Card 5 */}
           <div data-aos="fade-up-right" data-aos-duration="2000"
-            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            className="bg-[#fffff] dark:text-white  text-black p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <Image src="/image/Online_testing/time limits.webp" alt="Time Limits" width={200} height={150}
                 className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
@@ -141,7 +141,7 @@ export default function ONLINE_TESTING() {
 
           {/* Card 6 */}
           <div data-aos="fade-up-left" data-aos-duration="2000"
-            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            className="bg-[#fffff] dark:text-white  text-black p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <div>
                 <h3 className="text-3xl font-semibold mb-2">Question Randomization</h3>
@@ -154,7 +154,7 @@ export default function ONLINE_TESTING() {
 
           {/* Card 7 */}
           <div data-aos="fade-up-right" data-aos-duration="2000"
-            className="bg-[#1f1f1f] p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-md hover:shadow-2xl">
+            className="bg-[#fffff] dark:text-white text-black p-6 rounded-4xl transition-transform transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <Image src="/image/Online_testing/auto-submitted.webp" alt="Auto Submission" width={200} height={150}
                 className="w-full md:w-1/2 max-w-xs rounded-4xl object-contain" />
@@ -168,9 +168,9 @@ export default function ONLINE_TESTING() {
 
 
 
-        <section data-aos="fade-up" data-aos-duration="2000"  className="text-center text-white mt-20">
+        <section data-aos="fade-up" data-aos-duration="2000"  className="text-center dark:text-white  text-black mt-20">
           <h2 className="text-3xl font-bold mb-4">Ready to try it out?</h2>
-          <p className="mb-6">Over 20k+ users on ScholarRank. Join them.</p>
+          <p className="mb-6 text-2xl  text-gray-700 dark:text-gray-400">Over 20k+ users on ScholarRank. Join them.</p>
           <div className="flex flex-wrap justify-center cursor-pointer gap-4">
             <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white font-semibold py-2 px-4 hover:font-bold rounded-3xl">Get Started Free</button>
             <button className="bg-white border cursor-pointer border-blue-600 text-blue-600 hover:bg-blue-50 hover:font-bold font-semibold py-2 px-4 rounded-3xl">View Pricing</button>
