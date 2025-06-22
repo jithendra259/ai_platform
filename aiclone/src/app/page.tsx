@@ -98,11 +98,11 @@ export default function HomePage() {
 
           <div className='items-center justify-center flex flex-wrap gap-10 w-8xl'>
             <div className='items-text-center'>
-              <img src="/homepage_images/blackboud.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <img src="/image/homepage/blackbud.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
               <a>Blackboud</a>
             </div>
             <div>
-              <img src="/homepage_images/brightspace.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <img src="/image/homepage/brightspace.svg" alt="Hero Image" className="shadow-lg w-15 h-15" />
               <a>BrightSpace</a>
             </div>
             <div>
@@ -111,36 +111,36 @@ export default function HomePage() {
             </div>
 
             <div>
-              <img src="/homepage_images/firabase.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <img src="/image/homepage/firabase.webp" alt="Hero Image" className="shadow-lg w-15 h-15" />
               <a>Firebase</a>
             </div>
 
             <div>
-              <img src="/homepage_images/moodle.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <img src="/image/homepage/moodle.svg" alt="Hero Image" className="shadow-lg w-15 h-15" />
               <a>Moodle</a>
             </div>
             <div>
-              <img src="/homepage_images/schoology.png" alt="Hero Image" className="shadow-lg w-30 h-15" />
+              <img src="/image/homepage/schoology.png" alt="Hero Image" className="shadow-lg w-30 h-15" />
               <a>Schoology</a>
             </div>
 
             <div>
-              <img src="/homepage_images/skyward.png" alt="Hero Image" className="shadow-lg w-20 h-15" />
+              <img src="/image/homepage/skyward.svg" alt="Hero Image" className="shadow-lg w-20 h-15" />
               <a>Skyward</a>
             </div>
 
             <div>
-              <img src="/homepage_images/slack.png" alt="Hero Image" className="shadow-lg h-15" />
+              <img src="/image/homepage/slack.svg" alt="Hero Image" className="shadow-lg h-15" />
               <a>Slack</a>
             </div>
 
             <div>
-              <img src="/homepage_images/tally.png" alt="Hero Image" className="shadow-lg h-15" />
+              <img src="/image/homepage/tally.png" alt="Hero Image" className="shadow-lg h-15" />
               <a>Tally</a>
             </div>
 
             <div>
-              <img src="/homepage_images/webhook.png" alt="Hero Image" className="shadow-lg h-15" />
+              <img src="/image/homepage/wbhook.jpeg" alt="Hero Image" className="shadow-lg h-15" />
               <a>Webhook</a>
             </div>            
           </div>
