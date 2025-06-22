@@ -117,7 +117,7 @@ export default function HeaderActions() {
                   <p className="text-sm text-gray-600">Create Memes, Jokes, Videos</p>
                 </li>
               </Link>
-              <Link href="/Chat_Ui">
+              <Link href="/chat_Ui">
                 <li className="p-2 hover:bg-gray-400 rounded-lg cursor-pointer">
                   <p className="font-bold">🎭 Chat Ui</p>
                   <p className="text-sm text-gray-600"> Chat. Learn. Grow.</p>

@@ -1,4 +1,11 @@
+
+"use client";
+import React from 'react';
+import { useRouter } from 'next/navigation';
+
 export default function CtaSection() {
+  const router = useRouter();
+
   return (
     <section className="py-16 px-4 text-white">
       <div className="container mx-auto text-center">
@@ -7,7 +14,7 @@ export default function CtaSection() {
           Join thousands of students, researchers, and institutions using ScholarRank to make informed academic decisions.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="px-8 py-3 bg-white text-blue-600 rounded-md hover:bg-gray-100 font-medium">
+          <button onClick={()=>router.push('/signup')} className="px-8 py-3 bg-white text-blue-600 rounded-md hover:bg-gray-100 font-medium">
             Sign Up Free
           </button>
           <button className="px-8 py-3 border border-white text-white rounded-md hover:bg-blue-700 font-medium">
