@@ -133,7 +133,7 @@ export default function AiTutor(){
     
   ];
     return(
-        <div className="min-h-screen ">
+        <div className="min-h-screen mx-auto max-w-[96rem]">
             <header className="mt-10 ">
                 <div>
                     <AnimatedText
