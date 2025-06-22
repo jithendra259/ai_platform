@@ -131,7 +131,8 @@ export default function DocumentListener(){
     
   ];
     return(
-        <div className="min-h-screen ">
+      
+        <div className="min-h-screen mx-auto max-w-[96rem] ">
             <header className="mt-10 ">
                 <div>
                     <AnimatedText
@@ -145,11 +146,11 @@ export default function DocumentListener(){
             </header>
 
             <div className="flex flex-col mt-10 ">
-                <div className=" pl-11 text-zinc-50">
+                <div className=" pl-11">
                     <Breadcrumb>
                         <BreadcrumbList>
                             <BreadcrumbItem>
-                            <BreadcrumbLink href="/home" className="text-xl text-zinc-50">Products</BreadcrumbLink>
+                            <BreadcrumbLink href="/home" className="text-xl">Products</BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbSeparator />
                             <BreadcrumbItem>                            
@@ -207,22 +208,22 @@ export default function DocumentListener(){
                 </div>
 
                 <div className="">
-                    <div className=" w-full">
+                    <div className=" w-full ">
                         <div className=" w-full overflow-hidden">
                              <div>
                               <div className="flex pr-8">
-                                <div className="max-w-7xl mx-auto py-5 px-4 md:px-8 lg:px-10">
+                                <div className="max-w-7xl mx-auto py-5 px-4 md:px-8 lg:px-10 text-black dark:text-white">
                                     <h2 className="text-lg md:text-4xl mb-4  dark:text-white max-w-4xl">
                                     Document Listener: Automatic Text and File Playback
                                     </h2>
                                     <p className=" dark:text-neutral-300  md:text-base text-sm max-w-2xl ">
                                     
-                                    Document Listener is a revolutionary feature designed to enhance your 
-                                    user experience by providing automatic playback for any text or file 
-                                    you input. Simply upload your document or paste your text, and let Document 
-                                    Listener do the rest. It offers seamless playback functionality, allowing you 
-                                    to effortlessly listen to your content without any additional software or plugins. 
-                                    Whether you&apos;re on the go, multitasking, or prefer auditory learning, Document Listener 
+                                    Document Listener is a revolutionary feature designed to enhance your
+                                    user experience by providing automatic playback for any text or file
+                                    you input. Simply upload your document or paste your text, and let Document
+                                    Listener do the rest. It offers seamless playback functionality, allowing you
+                                    to effortlessly listen to your content without any additional software or plugins.
+                                    Whether you&apos;re on the go, multitasking, or prefer auditory learning, Document Listener
                                     ensures that your content is accessible and convenient.
                                     </p>
                                 </div>
@@ -265,5 +266,6 @@ export default function DocumentListener(){
                 </div>
             </div>
         </div>
+       
     );
 }

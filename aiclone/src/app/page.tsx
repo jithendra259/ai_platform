@@ -1,6 +1,6 @@
-// import HeroSection from '@/components/hero-section';
-// import FeaturesSection from '@/components/features-section';
-// import CtaSection from '@/components/cta-section';
+import HeroSection from '@/components/hero-section';
+import FeaturesSection from '@/components/features-section';
+import CtaSection from '@/components/cta-section';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import HeaderAction from '@/components/header-actions';
 import Footer_actions from '@/components/footer-actions';
@@ -47,8 +47,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
       <HeaderAction />
-      {/* <HeroSection />
-      <FeaturesSection /> */}
+       <HeroSection />
+      <FeaturesSection />
       
       <section className="py-12 px-4 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
@@ -145,7 +145,7 @@ export default function HomePage() {
         </div>
       </section>
       
-      {/* <CtaSection /> */}
+      <CtaSection />
 
       <Footer_actions />
     </div>
