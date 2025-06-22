@@ -4,6 +4,8 @@ import CtaSection from '@/components/cta-section';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import HeaderAction from '@/components/header-actions';
 import Footer_actions from '@/components/footer-actions';
+import React from 'react';
+
 const featureTabs = [
   {
     value: "tab-1",
@@ -89,7 +91,7 @@ export default function HomePage() {
           </Tabs>
         </div>
         <div>
-            <br /><br />
+           
           <h2 className="text-3xl font-bold text-center mt-12 mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
             Effortlessly incorporate ScholarRankAI into your existing system.
           </h2>
@@ -104,7 +106,7 @@ export default function HomePage() {
               <a>BrightSpace</a>
             </div>
             <div>
-              <img src="/homepage_images/email.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <img src="/image/homepage/email.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
               <a>Email</a>
             </div>
 
