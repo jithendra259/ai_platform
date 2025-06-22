@@ -102,11 +102,11 @@ export default function HomePage() {
               <a>Blackboud</a>
             </div>
             <div>
-              <img src="/image/homepage/brightspace.svg" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <img src="/image/homepage/brightspace.svg" alt="Hero Image" className="shadow-lg w-15 h-15 bg-white " />
               <a>BrightSpace</a>
             </div>
             <div>
-              <img src="/image/homepage/email.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
+              <img src="/image/homepage/email.svg" alt="Hero Image" className="shadow-lg w-15 h-15" />
               <a>Email</a>
             </div>
 

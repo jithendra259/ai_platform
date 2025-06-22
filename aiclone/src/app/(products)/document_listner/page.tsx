@@ -213,10 +213,10 @@ export default function DocumentListener(){
                              <div>
                               <div className="flex pr-8">
                                 <div className="max-w-7xl mx-auto py-5 px-4 md:px-8 lg:px-10 text-black dark:text-white">
-                                    <h2 className="text-lg md:text-4xl mb-4  dark:text-white max-w-4xl">
+                                    <h2 className="text-2xl md:text-4xl mb-4  dark:text-white max-w-4xl">
                                     Document Listener: Automatic Text and File Playback
                                     </h2>
-                                    <p className=" dark:text-neutral-300  md:text-base text-sm max-w-2xl ">
+                                    <p className=" dark:text-neutral-300  md:text-base text-xl max-w-3xl ">
                                     
                                     Document Listener is a revolutionary feature designed to enhance your
                                     user experience by providing automatic playback for any text or file

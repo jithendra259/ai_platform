@@ -17,11 +17,11 @@ const HeroSection = () => {
 
   return (
     <section className="py-20 px-4 lg:px-24 mx-auto max-w-[96rem] ">
-      <h1 className={`text-4xl md:text-5xl font-bold text-center mb-12 relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-0 after:h-1 after:bg-blue-500 after:transition-all after:duration-500 hover:after:w-full hover:text-blue-500 ${mounted ? "animate-fade-in" : ""}`}>
+      <h1 className={`text-4xl md:text-5xl font-bold text-center mb-12 relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-0 after:h-1 after:bg-blue-500 after:transition-all after:duration-500 hover:after:w-sm hover:text-blue-500 ${mounted ? "animate-fade-in" : ""}`}>
         Ask AI
       </h1>
 
-      <div className="flex flex-col md:flex-row items-center justify-between gap-96">
+      <div className="flex flex-col md:flex-row items-center justify-between">
         <div className={`flex-1 ${mounted ? "animate-slide-left" : ""}`}>
           <p className="text-3xl mb-4 ">
             Experience ChatGPT-4, Claude-3, Mistral AI, Cloude Instant and more — all in one subscription!
@@ -43,13 +43,13 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className={`flex-1 flex justify-center ${mounted ? "animate-scale-up" : ""}`} >
+        <div className={`flex-1 flex justify-center ${mounted ? "animate-scale-up" : ""}   `} >
           <Image
             src="/image/ask_aipic/chatbot.webp"
             alt="Chatbot"
             width={480}
             height={480}
-            className="rounded-3xl shadow-xl transition-transform duration-500 hover:scale-110"
+            className="rounded-3xl shadow-xl transition-transform duration-500 hover:scale-110 hidden md:block "
           />
         </div>
       </div>
