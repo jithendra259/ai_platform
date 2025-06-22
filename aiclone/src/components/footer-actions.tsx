@@ -6,7 +6,7 @@ export default function Footeractions() {
     <footer className=" pt-10 pb-6 mx-auto max-w-[96rem]">
       <div className="max-w-[96rem] mx-auto px-6">
 
-        <div className="flex flex-col max-[1079px]:flex-col lg:flex-row justify-center items-start gap-10 border-b border-black dark:border-white/20 pb-6">
+        <div className="flex flex-col max-[1079px]:flex-col lg:flex-row justify-center items-start gap-15 border-b border-t border-black dark:border-white/20 pt-6 pb-6">
 
           {/* Logo + Social Icons */}
           <div className="w-full lg:w-1/4 max-[1079px]:w-full text-center lg:text-left flex flex-col items-center lg:items-start gap-4">
@@ -44,7 +44,7 @@ export default function Footeractions() {
           </div>
 
           {/* Navigation Columns */}
-          <div className="w-full lg:w-3/4 max-[1079px]:w-full flex flex-col sm:flex-row justify-end max-[1079px]:items-center max-[1079px]:justify-center gap-12 text-center max-[1079px]:text-center lg:text-left text-sm lg:text-base">
+         <div className="w-full lg:w-3/4 max-[1079px]:w-full flex flex-col sm:flex-row sm:items-start sm:justify-evenly text-center sm:text-left text-sm lg:text-base">
 
             <div>
               <h4 className="text-purple-600 text-2xl font-semibold mb-2">Contact Us</h4>
