@@ -5,7 +5,6 @@ import { BackgroundPaths } from "@/components/ui/background-paths"
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useRouter } from 'next/navigation';
-import { Images } from "lucide-react";
 // Simple Step component definition
 type StepProps = { title: string };
 function Step({ title }: StepProps) {
@@ -113,13 +112,13 @@ export default function HomePage(){
         </h2>
         
         <div className="flex justify-center">
-          <Tabs defaultValue="tab-1" className="w-full max-w-5xl">
-            <TabsList className="grid grid-cols-4 md:grid-cols-7 gap-2 p-2 rounded-lg">
+          <Tabs defaultValue="tab-1" className="w-full max-w-6xl ">
+            <TabsList className="grid grid-cols-5 md:grid-cols-7   p-3 rounded-lg">
               {featureTabs.map((tab) => (
                 <TabsTrigger 
                   key={tab.value}
                   value={tab.value}
-                  className="text-xs md:text-sm px-2 py-1 rounded-md transition-colors"
+                  className="text-xl md:text-lg rounded-md transition-colors"
                 >
                   {tab.title}
                 </TabsTrigger>
@@ -128,19 +127,23 @@ export default function HomePage(){
             
             {featureTabs.map((tab) => (
               <TabsContent key={tab.value} value={tab.value} className="mt-2">
-                <div className="backdrop-blur-sm p-6 rounded-xl border">
-                  <h3 className="text-xl font-semibold text-center mb-4">
+                <div className="backdrop-blur-sm rounded-xl p-3  flex flex-wrap justify-evenly  items-center">
+                  <div className="flex flex-col max-w-2/4">
+                  <h3 className="text-3xl font-semibold mb-4">
                     {tab.title}
                   </h3>
                   {tab.description && (
-                    <p className="text-center mb-4">
+                    <p className="font-semibold text-2xl mb-4">
                       {tab.description}
                     </p>
                   )}
-                  <p className="">
+                  <p className="text-xl ">
                     {tab.content}
                   </p>
-                  <img src={tab.images} alt={tab.title} className="mt-4 mx-auto" />
+                  </div>
+                  <div className="flex justify-center items-center max-w-2/4">
+                     <img src={tab.images} alt={tab.title} width={300} height={300} className="rounded-4xl" />
+                  </div>
                 </div>
               </TabsContent>
             ))}
