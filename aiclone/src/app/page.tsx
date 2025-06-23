@@ -57,6 +57,29 @@ const featureTabs = [
     images: "image/homepage/documentlistner.png"
   }
 ];
+const cardData = [
+  {
+    img: "image/homepage/chatgpt.png",
+    title: "ChatGPT-4",
+    desc: "Enhance conversational AI for customer support, content creation, and interactive applications.",
+  },
+  
+  {
+    img: "image/homepage/clude.png",
+    title: "Claude-3",
+    desc: "Leverage advanced analytics and complex problem-solving for data-driven insights.",
+  },
+  {
+    img: "image/homepage/mistral.png",
+    title: "Mistral AI",
+    desc: "Utilize state-of-the-art predictive analytics and machine learning for superior decision-making.",
+  },
+  {
+    img: "image/homepage/cloudai.png",
+    title: "Cloud Instant",
+    desc: "Achieve real-time processing and immediate insights with unmatched speed and efficiency.",
+  },
+];
 
 
 
@@ -65,7 +88,7 @@ const featureTabs = [
 export default function HomePage() {
   const router = useRouter();
   return (
-    <div className="min-h-screen mx-auto max-w-[96rem]">
+    <div className="min-h-screen mx-auto max-w-[96rem] ">
       <header className="">
         <HeaderActions />
       </header>
@@ -74,36 +97,34 @@ export default function HomePage() {
           <BackgroundPaths title="The only AI tool you need!" />
         </div>
         <div className='items-center justify-center text-center flex-col mt-10 mb-10'>
-          <a >Trusted by 18000+ monthly active users globally</a>
+          <p  className="text-2xl text-gray-400 font-bold">Trusted by 18000+ monthly active users globally</p>
           <div className='items-center justify-center text-center flex flex-wrap gap-8 mt-4'>
             <img src="image/homepage/katihar_engeering_logo (1).png" className='bg-white' alt="alt" width={120} height={70} />
             <img src="image/homepage/iit_delhi_logo.png" alt="alt" className='' width={70} height={70} />
             <img src="image/homepage/niet_noida_logo.svg" className='bg-white ' alt="alt" width={110} height={70} />
-            <img src="image/homepage/fiit_jee_logo.svg" alt="alt" className='bg-white' width={80} height={50} />
+            <img src="image/homepage/fiitjee.png" alt="alt" width={120} height={80} />
             <img src="image/homepage/unc_cordoba_logo.png" alt="alt" width={120} height={70} />
             <img src="image/homepage/suffolk_uni_logo.png" alt="alt" width={80} height={70} />
           </div>
         </div>
 
-        <div>
-          <CardSpotlight className="h-96 w-96">
-            <p className="text-xl font-bold relative z-20 mt-2 text-white">
-              Authentication steps
-            </p>
-            <div className="text-neutral-200 mt-4 relative z-20">
-              Follow these steps to secure your account:
-              <ul className="list-none  mt-2">
-                <Step title="Enter your email address" />
-                <Step title="Create a strong password" />
-                <Step title="Set up two-factor authentication" />
-                <Step title="Verify your identity" />
-              </ul>
-            </div>
-            <p className="text-neutral-300 mt-4 relative z-20 text-sm">
-              Ensuring your account is properly secured helps protect your personal
-              information and data.
-            </p>
-          </CardSpotlight>
+        <div className="mt-20 mb-10">
+          <h1 className="text-2xl md:text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+            Unlock the Power of Advanced AI Models for Any Application with Our All-In-One AI System.
+          </h1>
+                    <div className="flex items-center justify-center gap-2  flex-wrap mt-10 mb-10">
+                      {cardData.map((card, idx) => (
+                        <CardSpotlight
+                          key={idx}
+                          className="h-72 w-70 border bg-zinc-800/50 backdrop-blur-xl shadow-lg flex flex-col items-center justify-center p-4"
+                        >
+                          <img src={card.img} alt={card.title} width={40} height={40} />
+                          <p className="text-2xl font-bold mt-2 text-black dark:text-white">{card.title}</p>
+                          <div className="text-base text-black dark:text-white mt-4 ">{card.desc}</div>
+                        </CardSpotlight>
+                      ))}
+                   </div>
+
         </div>
 
         <div className="mt-10">
@@ -112,8 +133,8 @@ export default function HomePage() {
           </h2>
 
           <div className="flex justify-center">
-            <Tabs defaultValue="tab-1" className="w-full max-w-5xl">
-              <TabsList className="grid grid-cols-4 md:grid-cols-7 gap-2 p-2 rounded-lg">
+            <Tabs defaultValue="tab-1" className="w-full max-w-6xl">
+              <TabsList className=" grid grid-cols-4 md:grid-cols-7 gap-2 p-2 rounded-lg">
                 {featureTabs.map((tab) => (
                   <TabsTrigger
                     key={tab.value}
@@ -127,19 +148,25 @@ export default function HomePage() {
 
               {featureTabs.map((tab) => (
                 <TabsContent key={tab.value} value={tab.value} className="mt-2">
-                  <div className="backdrop-blur-sm p-6 rounded-xl border">
-                    <h3 className="text-xl font-semibold text-center mb-4">
+                  <div className="flex flex-wrap items-center justify-evenly">
+                  <div className="backdrop-blur-sm p-6 w-1/2 ">
+                    <h3 className="text-xl font-semibold mb-4">
                       {tab.title}
                     </h3>
                     {tab.description && (
-                      <p className="text-center mb-4">
+                      <p className=" mb-4">
                         {tab.description}
                       </p>
                     )}
                     <p className="">
                       {tab.content}
                     </p>
-                    <img src={tab.images} alt={tab.title} className="mt-4 mx-auto" />
+                    </div>
+
+                    <div className="w-1/2">
+                    <img src={tab.images} alt={tab.title} width={300} height={300} className="mt-4 rounded-4xl mx-auto" />
+                    </div>
+
                   </div>
                 </TabsContent>
               ))}
@@ -148,12 +175,15 @@ export default function HomePage() {
 
         </div>
 
-        <h2 className="text-3xl font-bold text-center mt-20 mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-          Effortlessly incorporate ScholarRankAI into your existing system.
-        </h2>
+        <div className="mt-20 mb-8 items-center  text-center">
+          <div>
+          <h2 className="text-3xl font-bold text-center mt-20 mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+            Effortlessly incorporate ScholarRankAI into your existing system.
+          </h2>
+          </div>
 
-        <div className='items-center justify-center flex flex-wrap gap-10 w-8xl'>
-          <div className='items-text-center'>
+        <div className='flex flex-wrap gap-20 max-w-5xl justify-center mx-auto'>
+          <div className=''>
             <img src="/image/homepage/blackbud.png" alt="Hero Image" className="shadow-lg w-15 h-15" />
             <a>Blackboud</a>
           </div>
@@ -176,12 +206,12 @@ export default function HomePage() {
             <a>Moodle</a>
           </div>
           <div>
-            <img src="/image/homepage/schoology.png" alt="Hero Image" className="shadow-lg w-30 h-15" />
+            <img src="/image/homepage/schoology.png" alt="Hero Image" className="shadow-lg w-12 h-12 rounded-full" />
             <a>Schoology</a>
           </div>
 
           <div>
-            <img src="/image/homepage/skyward.svg" alt="Hero Image" className="shadow-lg w-20 h-15" />
+            <img src="/image/homepage/skyward.png" alt="Hero Image" className="shadow-lg w-20 h-15" />
             <a>Skyward</a>
           </div>
 
@@ -199,6 +229,7 @@ export default function HomePage() {
             <img src="/image/homepage/wbhook.jpeg" alt="Hero Image" className="shadow-lg h-15" />
             <a>Webhook</a>
           </div>
+        </div>
         </div>
         <div>
 
@@ -221,7 +252,7 @@ export default function HomePage() {
                   Sign Up Free
                 </button>
                 <button className="px-8 py-3 border  rounded-2xl hover:bg-gradient-to-r from-purple-600 to-cyan-400 font-medium">
-                  Contact Our Team members
+                  Contact Our Team
                 </button>
               </div>
             </div>

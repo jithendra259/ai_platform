@@ -151,7 +151,7 @@ export default function HeaderActions() {
           </div>
         </div>
       </header>
-      <div className="absolute left-0 right-0 mx-auto z-50 max-w-[96rem] md:block hidden">
+      <div className="absolute left-0 right-0 mx-auto max-w-[96rem] z-1 md:block hidden">
         <LightPullThemeSwitcher />
       </div>
 

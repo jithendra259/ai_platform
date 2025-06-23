@@ -145,7 +145,7 @@ export default function DocumentListener(){
                 </div>
             </header>
 
-            <div className="flex flex-col mt-10 ">
+            <div className="flex flex-col mt-10  ">
                 <div className=" pl-11">
                     <Breadcrumb>
                         <BreadcrumbList>
@@ -184,7 +184,7 @@ export default function DocumentListener(){
                             >
                                 <SelectTrigger
                                 id="select-database"
-                                className="relative ps-9"
+                                className="relative ps-9 z-2"
                                 aria-label="Select database"
                                 >
                                 <div className="pointer-events-none text-zinc-50 absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-muted-foreground/80 group-has-[[disabled]]:opacity-50">
