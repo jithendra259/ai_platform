@@ -222,7 +222,7 @@ export default function HomePage() {
                   Sign Up Free
                 </button>
                 <button className="px-8 py-3 border  rounded-2xl hover:bg-gradient-to-r from-purple-600 to-cyan-400 font-medium">
-                  Contact Our Team
+                  Contact Our Team members
                 </button>
               </div>
             </div>
