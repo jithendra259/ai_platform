@@ -24,7 +24,8 @@ function FloatingPaths({ position }: { position: number }) {
                 viewBox="0 0 696 316"
                 fill="none"
             >
-                <title>Background Paths</title>
+                <title></title>
+                
                 {paths.map((path) => (
                     <motion.path
                         key={path.id}
@@ -51,7 +52,7 @@ function FloatingPaths({ position }: { position: number }) {
 }
 
 export function BackgroundPaths({
-    title = "Background Paths",
+    title = "The only AI tool you need!",
 }: {
     title?: string;
 }) {
@@ -115,7 +116,7 @@ export function BackgroundPaths({
                             hover:shadow-md dark:hover:shadow-neutral-800/50"
                         >
                             <span className="opacity-90 group-hover:opacity-100 transition-opacity">
-                                Discover Excellence
+                                Try for free
                             </span>
                             <span
                                 className="ml-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1.5 

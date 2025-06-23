@@ -8,7 +8,7 @@ import { BackgroundPaths } from "@/components/ui/background-paths"
 export default function HeroSection() {
   return (
     <section className="relative bg-gray-900 py-20 px-4 border-b border-gray-800">
-      <BackgroundPaths title="Background Paths" />
+      <BackgroundPaths title="The only AI tool you need!" />
       <div className="container mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
           The only AI tool you need!
