@@ -81,7 +81,7 @@ const FeatureBlock = ({ title, points, imgSrc, reverse = false }: FeatureBlockPr
   const flexClass = reverse ? "md:flex-row-reverse" : "md:flex-row";
 
   return (
-    <div className={`flex flex-col ${flexClass} items-center gap-8 mx-auto max-w-[96rem] group hover:scale-[1.02] transition-transform`}>
+    <div className={`flex flex-col ${flexClass} items-center justify-between  mx-auto max-w-[96rem] group hover:scale-[1.02] transition-transform`}>
       <Image
         src={imgSrc}
         alt={title}
@@ -89,7 +89,7 @@ const FeatureBlock = ({ title, points, imgSrc, reverse = false }: FeatureBlockPr
         height={480}
         className="rounded-3xl w-full max-w-[300px] md:max-w-[480px] h-auto shadow-md group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300"
       />
-      <div>
+      <div className="text-left">
         <h3 className="text-3xl font-semibold m-10 text-left text-black dark:text-white dark:group-hover:text-blue-400 group-hover:text-blue-400 transition-colors">
           {title}
         </h3>
@@ -156,7 +156,7 @@ const CTASection = () => (
 
 // ----- Main Page -----
 const AskAIPage = () => (
-  <main className="  min-h-screen dark:bg-black">
+  <main className=" dark:bg-black">
     <HeroSection />
     <IntroSection />
     <FeatureSection />
