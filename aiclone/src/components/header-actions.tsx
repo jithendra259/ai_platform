@@ -28,8 +28,6 @@ export default function HeaderActions() {
             <Image src="/logo-sm.png" alt="logo" width={48} height={48} className="object-cover" />
             <h2 className="text-3xl sm:text-4xl font-bold">ScholarRank</h2>
           </div>
-
-
         </Link>
 
 
@@ -64,9 +62,12 @@ export default function HeaderActions() {
               if (isMobile) setProductOpen(!productOpen);
             }}>
             <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
-              <span className="absolute inset-0  scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
-              <span className="relative z-10 dark:group-hover:text-white group-hover:font-semibold">Products</span>
+              <span className="absolute inset-0 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-lg "></span>
+              <span className="relative z-10 text-black dark:text-white group-hover:text-black dark:group-hover:text-white group-hover:font-semibold">
+                Products
+              </span>
             </span>
+
 
             <div
               className={`absolute left-1/2 -translate-x-1/2 mt-2 w-72 bg-white text-black shadow-lg rounded-lg p-4 z-50
@@ -133,13 +134,15 @@ export default function HeaderActions() {
           {/* Pricing */}
           <Link href="/price">
             <span className="relative text-xl sm:text-2xl cursor-pointer px-4 py-1 transition-all duration-300 group overflow-hidden">
-              <span className="absolute inset-0  scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-lg z-0"></span>
-              <span className="relative z-10 dark:group-hover:text-white group-hover:font-semibold">Pricing</span>
+              <span className="absolute inset-0 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-lg "></span>
+              <span className="relative z-10 text-black dark:text-white group-hover:text-black dark:group-hover:text-white group-hover:font-semibold">
+                Pricing
+              </span>
             </span>
           </Link>
 
           {/* Login & Signup Buttons */}
-          <div className="flex gap-4 ">
+          <div className="flex gap-4">
             <Link href="/login">
               <button className="relative overflow-hidden cursor-pointer rounded-full px-6 py-2 text-white dark:text-black dark:bg-white text-lg font-semibold bg-cyan-400 group transition-all duration-300 transform hover:scale-105 hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-500">
                 <span className="relative z-10 group-hover:font-semibold">LogIn</span>
@@ -151,13 +154,9 @@ export default function HeaderActions() {
               </button>
             </Link>
           </div>
-
-
-
-
         </div>
       </header>
-      <div className="absolute left-0 right-0 mx-auto max-w-[96rem] md:block hidden">
+      <div className="absolute left-0 right-0 mx-auto max-w-[96rem] z-1 md:block hidden cursor-pointer">
         <LightPullThemeSwitcher />
       </div>
 
